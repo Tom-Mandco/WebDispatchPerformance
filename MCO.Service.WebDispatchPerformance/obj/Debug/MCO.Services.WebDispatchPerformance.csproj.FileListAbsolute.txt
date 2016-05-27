@@ -1,0 +1,1 @@
+F:\dev\Git\WebDispatchPerformance\MCO.Service.WebDispatchPerformance\obj\Debug\MCO.Services.WebDispatchPerformance.csprojResolveAssemblyReference.cache

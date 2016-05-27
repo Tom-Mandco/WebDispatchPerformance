@@ -1,0 +1,2 @@
+c:\users\tsmith\documents\visual studio 2013\Projects\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\WebDispatchPerformance.exe.config
+c:\users\tsmith\documents\visual studio 2013\Projects\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\MCO.Applications.WebDispatchPerformance.exe.config

@@ -1,0 +1,5 @@
+F:\dev\Git\WebDispatchPerformance\MCO.Domain.WebDispatchPerformance\obj\Debug\MCO.Domain.WebDispatchPerformance.csprojResolveAssemblyReference.cache
+F:\dev\Git\WebDispatchPerformance\MCO.Domain.WebDispatchPerformance\bin\Debug\MCO.Domain.WebDispatchPerformance.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Domain.WebDispatchPerformance\bin\Debug\MCO.Domain.WebDispatchPerformance.pdb
+F:\dev\Git\WebDispatchPerformance\MCO.Domain.WebDispatchPerformance\obj\Debug\MCO.Domain.WebDispatchPerformance.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Domain.WebDispatchPerformance\obj\Debug\MCO.Domain.WebDispatchPerformance.pdb
