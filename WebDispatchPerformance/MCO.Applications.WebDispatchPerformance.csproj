@@ -41,6 +41,9 @@
     <Reference Include="ClosedXML">
       <HintPath>C:\Users\tsmith\Downloads\ClosedXML.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
@@ -49,7 +52,7 @@
       <HintPath>..\packages\NLog.4.3.4\lib\net45\NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Firefly\Sh\Interop\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
@@ -63,20 +66,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationModule.cs" />
     <Compile Include="Classes\App.cs" />
     <Compile Include="Classes\DataHandler.cs" />
     <Compile Include="Classes\ExcelCreater.cs" />
     <Compile Include="Classes\ExcelHandler.cs" />
+    <Compile Include="Classes\ExcelPivotGenerator.cs" />
     <Compile Include="Classes\ExcelWriter.cs" />
-    <Compile Include="Classes\IEnumberable.cs" />
     <Compile Include="Classes\Log.cs" />
+    <Compile Include="Classes\ProcessHandler.cs" />
     <Compile Include="CompositionRoot.cs" />
     <Compile Include="Interfaces\IApp.cs" />
-    <Compile Include="Interfaces\IDataHander.cs" />
+    <Compile Include="Interfaces\IDataHandler.cs" />
     <Compile Include="Interfaces\IExcelCreater.cs" />
     <Compile Include="Interfaces\IExcelHandler.cs" />
+    <Compile Include="Interfaces\IExcelPivotGenerator.cs" />
     <Compile Include="Interfaces\IExcelWriter.cs" />
     <Compile Include="Interfaces\ILog.cs" />
+    <Compile Include="Interfaces\IProcessHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

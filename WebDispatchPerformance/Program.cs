@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MCO.Applications.WebDispatchPerformance.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,11 @@ namespace MCO.Applications.WebDispatchPerformance
         [STAThread]
         static void Main(string[] args)
         {
-            
+            CompositionRoot.Wire(new ApplicationModule());
+
+            var app = CompositionRoot.Resolve<IApp>();
+
+            app.Run();
         }
     }
 }

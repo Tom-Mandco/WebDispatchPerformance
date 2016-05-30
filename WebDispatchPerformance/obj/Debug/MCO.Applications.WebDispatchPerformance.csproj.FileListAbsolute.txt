@@ -18,3 +18,7 @@ F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\NLog.xml
 F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\System.Data.SQLite.xml
 F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\obj\Debug\MCO.Applications.WebDispatchPerformance.exe
 F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\obj\Debug\MCO.Applications.WebDispatchPerformance.pdb
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\ClosedXML.dll
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\MCO.Services.WebDispatchPerformance.dll
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\MCO.Services.WebDispatchPerformance.pdb
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\ClosedXML.xml

@@ -10,39 +10,22 @@ using MCO.Data.WebDispatchPerformance.Models;
 using MCO.Data.WebDispatchPerformance.Interfaces;
 using MCO.Services.WebDispatchPerformance;
 using MCO.Services.WebDispatchPerformance.Interfaces;
+using Ninject;
 
 namespace MCO.Applications.WebDispatchPerformance
 {
-    public class CompositionRoot : NinjectModule
+    public class CompositionRoot
     {
-        public override void Load()
+        private static IKernel NinjectKernel;
+
+        public static void Wire(INinjectModule module)
         {
-            string connectionString = "";
-            try
-            {
-                connectionString = ConfigurationManager.AppSettings["OracleConnection"];
-            }
-            catch (Exception ex)
-            {
+            NinjectKernel = new StandardKernel(module);
+        }
 
-            }
-
-            Bind<IRepository>().To<OracleRepository>().InSingletonScope().WithConstructorArgument("connectionString", connectionString);
-            Bind<IPerformLookup>().To<PerformLookup>();
-            Bind<ILog>().ToMethod(x =>
-            {
-                var scope = x.Request.ParentRequest.Service.FullName;
-                var log = (ILog)LogManager.GetLogger(scope, typeof(Log));
-                return log;
-            });
-
-            Bind<IApp>().To<App>();
-            Bind<IDataHander>().To<DataHandler>();
-            Bind<IExcelHandler>().To<ExcelHandler>();
-            Bind<IExcelWriter>().To<ExcelWriter>();
-
-            Bind<DispatchDetails>().ToSelf();
-
+        public static T Resolve<T>()
+        {
+            return NinjectKernel.Get<T>();
         }
     }
 }

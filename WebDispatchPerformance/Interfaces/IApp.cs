@@ -2,6 +2,6 @@
 {
     interface IApp
     {
-
+        void Run();
     }
 }

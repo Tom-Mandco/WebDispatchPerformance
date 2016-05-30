@@ -15,36 +15,32 @@ using System.IO;
         private IExcelWriter excelWriter;
         private IExcelCreater excelCreater;
 
-        public ExcelHandler(ILog logger, IExcelWriter excelWriter)
+        public ExcelHandler(ILog logger, IExcelWriter excelWriter, IExcelCreater excelCreater)
         {
             this.logger = logger;
             this.excelWriter = excelWriter;
+            this.excelCreater = excelCreater;
         }
         #endregion
 
 
         #region Main Functions
-        public void writeToExcel(IEnumerable<DispatchDetails> dispatchDetails)
+        public void writeToExcel()
         {
             logger.Info("Excel Hander - Write to Excel: Started");
-            if(dispatchDetails != null)
-            {
-                logger.Info("Dispatch Details passed successfully");
-            }
-            
             if (!DoesExcelFileExist())
             {
-                excelCreater.CreateNewSpreadsheet();
+                //excelCreater.CreateNewSpreadsheet();
             }
-
-            excelWriter.WriteToExcel();
+            excelWriter.WriteDataWithPivot();
+            //excelWriter.WriteToExcel();
         }
         #endregion
 
         #region Utilities
         bool DoesExcelFileExist()
         {
-            return File.Exists(String.Format("{0}{4}-{5}-{6} {1} - [{2}]{3}",
+            return File.Exists(String.Format("{0}{4}-{5}-{6} {1} - ({2}){3}",
                     ConfigurationManager.AppSettings["ExcelFilePath"],
                     ConfigurationManager.AppSettings["ExcelFileName"],
                     ConfigurationManager.AppSettings["RunLevel"],

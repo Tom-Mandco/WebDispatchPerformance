@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCO.Data.WebDispatchPerform
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCO.Domain.WebDispatchPerformance", "MCO.Domain.WebDispatchPerformance\MCO.Domain.WebDispatchPerformance.csproj", "{212815CD-8CAF-4F87-93F8-408BFBE8357D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCO.Services.WebDispatchPerformance.Test", "MCO.Services.WebDispatchPerformance.Test\MCO.Services.WebDispatchPerformance.Test.csproj", "{6FB80708-A210-4C16-BD5C-E5E3A25ABD03}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCO.Services.WebDispatchPerformance", "MCO.Services.WebDispatchPerformance\MCO.Services.WebDispatchPerformance.csproj", "{DF067BCE-3258-4250-A289-BFAF86E2CA4A}"
 EndProject
 Global
@@ -65,14 +63,6 @@ Global
 		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.Test|Any CPU.ActiveCfg = Test|Any CPU
 		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.Test|Any CPU.Build.0 = Test|Any CPU
-		{6FB80708-A210-4C16-BD5C-E5E3A25ABD03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FB80708-A210-4C16-BD5C-E5E3A25ABD03}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FB80708-A210-4C16-BD5C-E5E3A25ABD03}.QA|Any CPU.ActiveCfg = QA|Any CPU
-		{6FB80708-A210-4C16-BD5C-E5E3A25ABD03}.QA|Any CPU.Build.0 = QA|Any CPU
-		{6FB80708-A210-4C16-BD5C-E5E3A25ABD03}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FB80708-A210-4C16-BD5C-E5E3A25ABD03}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6FB80708-A210-4C16-BD5C-E5E3A25ABD03}.Test|Any CPU.ActiveCfg = Test|Any CPU
-		{6FB80708-A210-4C16-BD5C-E5E3A25ABD03}.Test|Any CPU.Build.0 = Test|Any CPU
 		{DF067BCE-3258-4250-A289-BFAF86E2CA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DF067BCE-3258-4250-A289-BFAF86E2CA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF067BCE-3258-4250-A289-BFAF86E2CA4A}.QA|Any CPU.ActiveCfg = QA|Any CPU

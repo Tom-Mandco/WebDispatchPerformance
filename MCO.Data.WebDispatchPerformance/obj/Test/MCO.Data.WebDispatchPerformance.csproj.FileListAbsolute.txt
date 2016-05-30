@@ -1,0 +1,7 @@
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Test\MCO.Data.WebDispatchPerformance.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Test\MCO.Data.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Test\System.Data.SQLite.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Test\Oracle.ManagedDataAccess.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Test\System.Data.SQLite.xml
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\obj\Test\MCO.Data.WebDispatchPerformance.csprojResolveAssemblyReference.cache
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\obj\Test\MCO.Data.WebDispatchPerformance.dll

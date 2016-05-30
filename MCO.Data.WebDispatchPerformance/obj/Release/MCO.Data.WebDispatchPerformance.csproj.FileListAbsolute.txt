@@ -1,0 +1,10 @@
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Release\MCO.Data.WebDispatchPerformance.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Release\MCO.Data.WebDispatchPerformance.pdb
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Release\MCO.Data.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Release\System.Data.SQLite.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Release\Oracle.ManagedDataAccess.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Release\MCO.Data.pdb
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Release\System.Data.SQLite.xml
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\obj\Release\MCO.Data.WebDispatchPerformance.csprojResolveAssemblyReference.cache
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\obj\Release\MCO.Data.WebDispatchPerformance.dll
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\obj\Release\MCO.Data.WebDispatchPerformance.pdb

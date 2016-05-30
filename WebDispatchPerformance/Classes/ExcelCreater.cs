@@ -18,14 +18,14 @@
 
         public void CreateNewSpreadsheet()
         {
-            logger.Info(String.Format("Excel Creater - Generating Spreadsheet{2} Path : {0}", ConfigurationManager.AppSettings["ExcelFilePath"], Environment.NewLine));
+            logger.Info(String.Format("Excel Creater - Generating Spreadsheet{1} Path : {0}", ConfigurationManager.AppSettings["ExcelFilePath"], Environment.NewLine));
 
             DataTable dt = GetHeadersInTable();
 
             XLWorkbook xlwb = new XLWorkbook();
-            xlwb.Worksheets.Add(dt, "Missed Orders");
+            xlwb.Worksheets.Add(dt, ConfigurationManager.AppSettings["ExcelDataSheetName"]);
 
-            xlwb.SaveAs(String.Format("{0}{4}-{5}-{6} {1} - [{2}]{3}",
+            xlwb.SaveAs(String.Format("{0}{4}-{5}-{6} {1} - ({2}){3}",
                     ConfigurationManager.AppSettings["ExcelFilePath"],
                     ConfigurationManager.AppSettings["ExcelFileName"],
                     ConfigurationManager.AppSettings["RunLevel"],
