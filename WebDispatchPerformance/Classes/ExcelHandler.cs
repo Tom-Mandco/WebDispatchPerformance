@@ -28,22 +28,19 @@ using System.IO;
         public void writeToExcel()
         {
             logger.Info("Excel Hander - Write to Excel: Started");
-            excelWriter.WriteToExcel();
+            try
+            {
+                excelWriter.WriteToExcel();
+            }
+            catch(Exception ex)
+            {
+                logger.Error(ex.Message);
+                logger.Error(ex.StackTrace);
+            }
         }
         #endregion
 
         #region Utilities
-        bool DoesExcelFileExist()
-        {
-            return File.Exists(String.Format("{0}{4}-{5}-{6} {1} - ({2}){3}",
-                    ConfigurationManager.AppSettings["ExcelFilePath"],
-                    ConfigurationManager.AppSettings["ExcelFileName"],
-                    ConfigurationManager.AppSettings["RunLevel"],
-                    ConfigurationManager.AppSettings["FileExtension"],
-                    System.DateTime.Now.Day,
-                    System.DateTime.Now.Month,
-                    System.DateTime.Now.Year));
-        }
         #endregion
     }
 }

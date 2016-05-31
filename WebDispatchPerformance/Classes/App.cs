@@ -31,9 +31,11 @@
             }
             catch (Exception ex)
             {
+                Logger.Error(ex.Message);
                 Logger.Error(ex.StackTrace);
-                Logger.Error(ex.Source);
             }
+            Logger.Info("Program Ending{0}",
+                        Environment.NewLine);
         }
         #endregion
     }
