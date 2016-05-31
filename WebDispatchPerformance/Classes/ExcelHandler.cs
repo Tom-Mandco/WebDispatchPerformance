@@ -28,12 +28,7 @@ using System.IO;
         public void writeToExcel()
         {
             logger.Info("Excel Hander - Write to Excel: Started");
-            if (!DoesExcelFileExist())
-            {
-                //excelCreater.CreateNewSpreadsheet();
-            }
-            excelWriter.WriteDataWithPivot();
-            //excelWriter.WriteToExcel();
+            excelWriter.WriteToExcel();
         }
         #endregion
 

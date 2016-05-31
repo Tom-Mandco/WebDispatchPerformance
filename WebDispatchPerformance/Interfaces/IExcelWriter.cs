@@ -5,6 +5,5 @@ namespace MCO.Applications.WebDispatchPerformance.Interfaces
     interface IExcelWriter
     {
         void WriteToExcel();
-        void WriteDataWithPivot();
     }
 }

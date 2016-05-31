@@ -30,12 +30,12 @@ using System.Data;
             if (dispatchDetails != null)
             {
                 #region Set Columns
-                resultDT.Columns.Add("Despatch Day");
+                resultDT.Columns.Add("Dispatch Day");
                 resultDT.Columns.Add("Day of Week");
-                resultDT.Columns.Add("Despatch By");
+                resultDT.Columns.Add("Dispatch By");
                 resultDT.Columns.Add("Start Time");
-                resultDT.Columns.Add("Orders");
-                resultDT.Columns.Add("Quantity");
+                resultDT.Columns.Add("Orders", typeof(int));
+                resultDT.Columns.Add("Quantity", typeof(int));
                 #endregion
 
                 foreach (var detail in dispatchDetails)
@@ -43,8 +43,8 @@ using System.Data;
                     resultDT.Rows.Add(detail.DESPATCH_DAY.Replace("_", " "),
                                       detail.DAYOFWEEK,
                                       detail.DESPATCH_BY,
-                                      detail.START_TIME.Replace(":", " "),
-                                      Convert.ToInt32(detail.ORDS),
+                                      detail.START_TIME,
+                                      detail.ORDS,
                                       detail.QTY);
                 }
             }
