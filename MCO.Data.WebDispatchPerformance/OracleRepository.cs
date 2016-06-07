@@ -23,6 +23,15 @@ namespace MCO.Data.WebDispatchPerformance
                 return result.Any() ? result : null;
             }
         }
+
+        public IEnumerable<ReturnDetails> GetLastWeekWebReturnDetails()
+        {
+            using (new SharedConnection(dbConnection))
+            {
+                var result = dbConnection.Query<ReturnDetails>(SqlLoader.GetSql("web returns performance"));
+                return result.Any() ? result : null;
+            }
+        }
         #endregion
 
         public string getConnectionStringFromOR()

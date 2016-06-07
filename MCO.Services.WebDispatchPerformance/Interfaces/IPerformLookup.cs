@@ -10,5 +10,6 @@ namespace MCO.Services.WebDispatchPerformance.Interfaces
     public interface IPerformLookup
     {
         IEnumerable<DispatchDetails> GetLastWeeksDispatchDetail();
+        IEnumerable<ReturnDetails> GetLastWeeksReturnsDetail();
     }
 }

@@ -6,5 +6,6 @@ namespace MCO.Data.WebDispatchPerformance.Interfaces
     public interface IRepository
     {
         IEnumerable<DispatchDetails> GetLastWeekWebDispatchDetails();
+        IEnumerable<ReturnDetails> GetLastWeekWebReturnDetails();
     }
 }

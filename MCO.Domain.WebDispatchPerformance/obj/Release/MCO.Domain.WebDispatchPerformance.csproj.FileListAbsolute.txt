@@ -1,4 +1,0 @@
-F:\dev\Git\WebDispatchPerformance\MCO.Domain.WebDispatchPerformance\bin\Release\MCO.Domain.WebDispatchPerformance.dll
-F:\dev\Git\WebDispatchPerformance\MCO.Domain.WebDispatchPerformance\bin\Release\MCO.Domain.WebDispatchPerformance.pdb
-F:\dev\Git\WebDispatchPerformance\MCO.Domain.WebDispatchPerformance\obj\Release\MCO.Domain.WebDispatchPerformance.dll
-F:\dev\Git\WebDispatchPerformance\MCO.Domain.WebDispatchPerformance\obj\Release\MCO.Domain.WebDispatchPerformance.pdb

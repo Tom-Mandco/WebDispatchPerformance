@@ -13,13 +13,11 @@ using System.IO;
         #region Initialization
         private readonly ILog logger;
         private IExcelWriter excelWriter;
-        private IExcelCreater excelCreater;
 
-        public ExcelHandler(ILog logger, IExcelWriter excelWriter, IExcelCreater excelCreater)
+        public ExcelHandler(ILog logger, IExcelWriter excelWriter)
         {
             this.logger = logger;
             this.excelWriter = excelWriter;
-            this.excelCreater = excelCreater;
         }
         #endregion
 

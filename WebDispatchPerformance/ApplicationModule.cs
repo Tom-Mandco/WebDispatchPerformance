@@ -23,7 +23,7 @@
             }
             catch (Exception ex)
             {
-
+                
             }
 
             Bind(typeof(IApp)).To(typeof(App));
@@ -36,12 +36,12 @@
             Bind(typeof(IDataHandler)).To(typeof(DataHandler));
             Bind(typeof(IExcelHandler)).To(typeof(ExcelHandler));
             Bind(typeof(IExcelWriter)).To(typeof(ExcelWriter));
-            Bind(typeof(IExcelCreater)).To(typeof(ExcelCreater));
             Bind(typeof(IRepository)).To(typeof(OracleRepository)).InSingletonScope().WithConstructorArgument("connectionString", connectionString);
             Bind(typeof(IPerformLookup)).To(typeof(PerformLookup));
             Bind(typeof(IProcessHandler)).To(typeof(ProcessHandler));
 
-            Bind<DispatchDetails>().ToSelf();           
+            Bind<DispatchDetails>().ToSelf();
+            Bind<ReturnDetails>().ToSelf();
         }
     }
 }

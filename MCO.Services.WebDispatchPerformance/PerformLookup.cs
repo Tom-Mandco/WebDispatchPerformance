@@ -12,11 +12,13 @@ namespace MCO.Services.WebDispatchPerformance
         #region Initialization
         private readonly IRepository oracleRepository;
         private IEnumerable<DispatchDetails> dispatchDetails;
+        private IEnumerable<ReturnDetails> returnDetails;
 
 
-        public PerformLookup(IRepository oracleRepository, IEnumerable<DispatchDetails> dispatchDetails)
+        public PerformLookup(IRepository oracleRepository, IEnumerable<DispatchDetails> dispatchDetails, IEnumerable<ReturnDetails> returnDetails)
         {
             this.dispatchDetails = dispatchDetails;
+            this.returnDetails = returnDetails;
             this.oracleRepository = oracleRepository;
         }
         #endregion
@@ -26,6 +28,12 @@ namespace MCO.Services.WebDispatchPerformance
         {
             dispatchDetails = oracleRepository.GetLastWeekWebDispatchDetails();
             return dispatchDetails;
+        }
+
+        public IEnumerable<ReturnDetails> GetLastWeeksReturnsDetail()
+        {
+            returnDetails = oracleRepository.GetLastWeekWebReturnDetails();
+            return returnDetails;
         }
         #endregion
 

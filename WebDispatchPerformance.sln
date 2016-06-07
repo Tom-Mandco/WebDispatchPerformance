@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCO.Data", "..\..\MCO\Lib\M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCO.Data.WebDispatchPerformance", "MCO.Data.WebDispatchPerformance\MCO.Data.WebDispatchPerformance.csproj", "{A086AA2E-EC54-4582-888F-CE4868839B34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCO.Domain.WebDispatchPerformance", "MCO.Domain.WebDispatchPerformance\MCO.Domain.WebDispatchPerformance.csproj", "{212815CD-8CAF-4F87-93F8-408BFBE8357D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCO.Services.WebDispatchPerformance", "MCO.Services.WebDispatchPerformance\MCO.Services.WebDispatchPerformance.csproj", "{DF067BCE-3258-4250-A289-BFAF86E2CA4A}"
 EndProject
 Global
@@ -55,14 +53,6 @@ Global
 		{A086AA2E-EC54-4582-888F-CE4868839B34}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A086AA2E-EC54-4582-888F-CE4868839B34}.Test|Any CPU.ActiveCfg = Test|Any CPU
 		{A086AA2E-EC54-4582-888F-CE4868839B34}.Test|Any CPU.Build.0 = Test|Any CPU
-		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.QA|Any CPU.ActiveCfg = QA|Any CPU
-		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.QA|Any CPU.Build.0 = QA|Any CPU
-		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.Test|Any CPU.ActiveCfg = Test|Any CPU
-		{212815CD-8CAF-4F87-93F8-408BFBE8357D}.Test|Any CPU.Build.0 = Test|Any CPU
 		{DF067BCE-3258-4250-A289-BFAF86E2CA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DF067BCE-3258-4250-A289-BFAF86E2CA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF067BCE-3258-4250-A289-BFAF86E2CA4A}.QA|Any CPU.ActiveCfg = QA|Any CPU
@@ -74,5 +64,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal

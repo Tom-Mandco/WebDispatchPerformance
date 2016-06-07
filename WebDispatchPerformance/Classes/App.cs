@@ -26,6 +26,7 @@
         {
             try
             {
+                Logger.Info("Starting run of Data Handler");
                 processHandler.ProcessDataToExcel();
                 Logger.Info("Data Handler run successfully.");
             }

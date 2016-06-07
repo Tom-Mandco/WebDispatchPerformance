@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.core.2.1.0\build\portable-net45+win8+wp8+wpa81\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.1.0\build\portable-net45+win8+wp8+wpa81\xunit.core.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,6 +12,7 @@
     <AssemblyName>MCO.Applications.WebDispatchPerformance</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>5a93bace</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,6 +43,7 @@
     <Reference Include="ClosedXML">
       <HintPath>C:\Users\tsmith\Downloads\ClosedXML.dll</HintPath>
     </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
@@ -64,23 +67,35 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.assert.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.assert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.core.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.1.0.3179, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.execution.2.1.0\lib\net45\xunit.execution.desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationModule.cs" />
     <Compile Include="Classes\App.cs" />
     <Compile Include="Classes\DataHandler.cs" />
-    <Compile Include="Classes\ExcelCreater.cs" />
     <Compile Include="Classes\ExcelHandler.cs" />
-    <Compile Include="Classes\ExcelPivotGenerator.cs" />
     <Compile Include="Classes\ExcelWriter.cs" />
     <Compile Include="Classes\Log.cs" />
     <Compile Include="Classes\ProcessHandler.cs" />
     <Compile Include="CompositionRoot.cs" />
     <Compile Include="Interfaces\IApp.cs" />
     <Compile Include="Interfaces\IDataHandler.cs" />
-    <Compile Include="Interfaces\IExcelCreater.cs" />
     <Compile Include="Interfaces\IExcelHandler.cs" />
-    <Compile Include="Interfaces\IExcelPivotGenerator.cs" />
     <Compile Include="Interfaces\IExcelWriter.cs" />
     <Compile Include="Interfaces\ILog.cs" />
     <Compile Include="Interfaces\IProcessHandler.cs" />
@@ -120,10 +135,6 @@
       <Project>{a086aa2e-ec54-4582-888f-ce4868839b34}</Project>
       <Name>MCO.Data.WebDispatchPerformance</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MCO.Domain.WebDispatchPerformance\MCO.Domain.WebDispatchPerformance.csproj">
-      <Project>{212815cd-8caf-4f87-93f8-408bfbe8357d}</Project>
-      <Name>MCO.Domain.WebDispatchPerformance</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MCO.Services.WebDispatchPerformance\MCO.Services.WebDispatchPerformance.csproj">
       <Project>{df067bce-3258-4250-a289-bfaf86e2ca4a}</Project>
       <Name>MCO.Services.WebDispatchPerformance</Name>
@@ -156,5 +167,15 @@
     </PropertyGroup>
     <!--Publish copies the untransformed App.config to deployment directory so overwrite it-->
     <Copy Condition="Exists('$(DeployedConfig)')" SourceFiles="$(IntermediateOutputPath)$(TargetFileName).config" DestinationFiles="$(DeployedConfig)" />
+  </Target>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\xunit.core.2.1.0\build\portable-net45+win8+wp8+wpa81\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.1.0\build\portable-net45+win8+wp8+wpa81\xunit.core.props'))" />
+  </Target>
+  <Target Name="AfterBuild" Condition="Exists('NLog.$(Configuration).config')">
+    <!--Generate transformed config in the output directory-->
+    <TransformXml Source="NLog.config" Destination="$(OutputPath)NLog.config" Transform="NLog.$(Configuration).config" />
   </Target>
 </Project>

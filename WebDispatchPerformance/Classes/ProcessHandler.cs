@@ -1,7 +1,7 @@
-﻿using MCO.Applications.WebDispatchPerformance.Interfaces;
-
-namespace MCO.Applications.WebDispatchPerformance.Classes
+﻿namespace MCO.Applications.WebDispatchPerformance.Classes
 {
+    using MCO.Applications.WebDispatchPerformance.Interfaces;
+
     class ProcessHandler : IProcessHandler
     {
         private readonly IExcelHandler excelHandler;

@@ -9,3 +9,6 @@ F:\dev\Git\WebDispatchPerformance\MCO.Services.WebDispatchPerformance\bin\Releas
 F:\dev\Git\WebDispatchPerformance\MCO.Services.WebDispatchPerformance\bin\Release\System.Data.SQLite.xml
 F:\dev\Git\WebDispatchPerformance\MCO.Services.WebDispatchPerformance\obj\Release\MCO.Services.WebDispatchPerformance.dll
 F:\dev\Git\WebDispatchPerformance\MCO.Services.WebDispatchPerformance\obj\Release\MCO.Services.WebDispatchPerformance.pdb
+F:\dev\Git\WebDispatchPerformance\MCO.Services.WebDispatchPerformance\obj\Release\MCO.Services.WebDispatchPerformance.csprojResolveAssemblyReference.cache
+F:\dev\Git\WebDispatchPerformance\MCO.Services.WebDispatchPerformance\bin\Release\MCO.Services.WebDispatchPerformance.dll.CodeAnalysisLog.xml
+F:\dev\Git\WebDispatchPerformance\MCO.Services.WebDispatchPerformance\bin\Release\MCO.Services.WebDispatchPerformance.dll.lastcodeanalysissucceeded

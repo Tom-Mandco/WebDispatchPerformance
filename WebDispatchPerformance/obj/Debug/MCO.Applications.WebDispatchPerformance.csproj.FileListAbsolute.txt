@@ -22,3 +22,12 @@ F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\ClosedXML.dll
 F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\MCO.Services.WebDispatchPerformance.dll
 F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\MCO.Services.WebDispatchPerformance.pdb
 F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\ClosedXML.xml
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\xunit.execution.desktop.dll
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\xunit.abstractions.dll
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\xunit.assert.dll
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\xunit.core.dll
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\xunit.abstractions.xml
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\xunit.assert.pdb
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\xunit.assert.xml
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\xunit.core.pdb
+F:\dev\Git\WebDispatchPerformance\WebDispatchPerformance\bin\Debug\xunit.core.xml

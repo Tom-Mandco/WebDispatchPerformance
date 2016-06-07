@@ -8,3 +8,5 @@ F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Release\Sy
 F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\obj\Release\MCO.Data.WebDispatchPerformance.csprojResolveAssemblyReference.cache
 F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\obj\Release\MCO.Data.WebDispatchPerformance.dll
 F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\obj\Release\MCO.Data.WebDispatchPerformance.pdb
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Release\MCO.Data.WebDispatchPerformance.dll.CodeAnalysisLog.xml
+F:\dev\Git\WebDispatchPerformance\MCO.Data.WebDispatchPerformance\bin\Release\MCO.Data.WebDispatchPerformance.dll.lastcodeanalysissucceeded

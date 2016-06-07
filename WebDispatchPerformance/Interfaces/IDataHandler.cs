@@ -4,8 +4,9 @@ using System.Data;
 
 namespace MCO.Applications.WebDispatchPerformance.Interfaces
 {
-    interface IDataHandler
+    public interface IDataHandler
     {
         DataTable BindDispatchDetails();
+        DataTable BindReturnDetails();
     }
 }
